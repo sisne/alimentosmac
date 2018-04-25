@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>        
+
+        <record id="fiscal_position_tax_dr_001" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_dr_001" />
+            <field name="tax_src_id" ref="purchase_tax_dr_002" />
+            <field name="tax_dest_id" ref="purchase_tax_dr_001" />
+        </record>
+
+        <record id="fiscal_position_tax_dr_002" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_dr_002" />
+            <field name="tax_src_id" ref="purchase_tax_dr_002" />
+            <field name="tax_dest_id" ref="purchase_tax_dr_002" />
+        </record>
+        <record id="fiscal_position_tax_dr_003" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_dr_002" />
+            <field name="tax_src_id" ref="purchase_tax_dr_002" />
+            <field name="tax_dest_id" ref="purchase_tax_dr_003" />
+        </record>
+
+        <record id="fiscal_position_tax_dr_004" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_dr_003" />
+            <field name="tax_src_id" ref="purchase_tax_dr_002" />
+            <field name="tax_dest_id" ref="purchase_tax_dr_002" />
+        </record>
+        <record id="fiscal_position_tax_dr_005" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_dr_003" />
+            <field name="tax_src_id" ref="purchase_tax_dr_002" />
+            <field name="tax_dest_id" ref="purchase_tax_dr_004" />
+        </record>
+
+        <record id="fiscal_position_tax_dr_006" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_dr_004" />
+            <field name="tax_src_id" ref="purchase_tax_dr_002" />
+            <field name="tax_dest_id" ref="purchase_tax_dr_002" />
+        </record>
+        <record id="fiscal_position_tax_dr_007" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_dr_004" />
+            <field name="tax_src_id" ref="purchase_tax_dr_002" />
+            <field name="tax_dest_id" ref="purchase_tax_dr_005" />
+        </record>
+        <record id="fiscal_position_tax_dr_008" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_dr_004" />
+            <field name="tax_src_id" ref="purchase_tax_dr_002" />
+            <field name="tax_dest_id" ref="purchase_tax_dr_011" />
+        </record>
+
+        <record id="fiscal_position_tax_dr_009" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_dr_005" />
+            <field name="tax_src_id" ref="purchase_tax_dr_002" />
+            <field name="tax_dest_id" ref="purchase_tax_dr_002" />
+        </record>
+        <record id="fiscal_position_tax_dr_010" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_dr_005" />
+            <field name="tax_src_id" ref="purchase_tax_dr_002" />
+            <field name="tax_dest_id" ref="purchase_tax_dr_005" />
+        </record>
+        <record id="fiscal_position_tax_dr_011" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_dr_005" />
+            <field name="tax_src_id" ref="purchase_tax_dr_002" />
+            <field name="tax_dest_id" ref="purchase_tax_dr_012" />
+        </record>
+
+</odoo>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+        <record id="fiscal_position_dr_001" model="account.fiscal.position.template">
+            <field name="name">Exento ITBIS</field>
+            <field name="chart_template_id" ref="chart_dr"/>
+            <field name="note">Empresas exentas en el pago de ITBIS</field>
+        </record>
+
+        <record id="fiscal_position_dr_002" model="account.fiscal.position.template">
+            <field name="name">Servicios PM</field>
+            <field name="chart_template_id" ref="chart_dr"/>
+            <field name="note">Compras de servicios a Personas Morales</field>
+        </record>
+
+        <record id="fiscal_position_dr_003" model="account.fiscal.position.template">
+            <field name="name">Compras PF</field>
+            <field name="chart_template_id" ref="chart_dr"/>
+            <field name="note">Compras a Personas Fisicas</field>
+        </record>
+
+        <record id="fiscal_position_dr_004" model="account.fiscal.position.template">
+            <field name="name">Rep. o mant. PF</field>
+            <field name="chart_template_id" ref="chart_dr"/>
+            <field name="note">Reparaciones o mantenimiento por Personas Fisicas</field>
+        </record>
+
+        <record id="fiscal_position_dr_005" model="account.fiscal.position.template">
+            <field name="name">Servicios PF</field>
+            <field name="chart_template_id" ref="chart_dr"/>
+            <field name="note">Compras de servicios a Personas Fisicas</field>
+        </record>
+
+</odoo>

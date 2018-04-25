@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="chart_dr_11120999" model="account.account.template">
+        <field name="name">Transferencias entre bancos</field>
+        <field name="code">11120999</field>
+        <field name="reconcile" eval="True"/>
+        <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    </record>
+    
+    <record id="chart_dr" model="account.chart.template">
+        <field name="name">Catálogo de Cuentas Empresas Privadas</field>
+        <field name="currency_id" ref="base.DOP"/>
+        <field name="code_digits" eval="8"/>
+        <field name="transfer_account_id" ref="chart_dr_11120999"/>
+        <field name="bank_account_code_prefix">1112</field>
+        <field name="cash_account_code_prefix">1111</field>
+    </record>
+
+    <record id="chart_dr_11120999" model="account.account.template">
+        <field name="chart_template_id" ref="chart_dr"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_payment_form_ext" model="ir.ui.view">
+        <field name="name">account.payment.form.view.inherit</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account.view_account_payment_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='state']" position="replace">
+                <field name="state" widget="statusbar" statusbar_visible="posted,reconciled"/>
+            </xpath>
+            <xpath expr="//button[@name='post']" position="after">
+                <button name="set_to_draft" class="oe_highlight" states="cancel" string="Set to Draft" type="object"/>
+            </xpath>
+        </field>
+    </record>
+    
+    <record id="payment_cancel_form_ext" model="ir.ui.view">
+        <field name="name">account.payment.cancel.form.view.inherit</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account_cancel.payment_cancel_form_inherit" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='cancel']" position="replace">
+                <button name="cancel" attrs="{'invisible': [('state', 'in', ['cancel'])]}" string="Cancel" type="object"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

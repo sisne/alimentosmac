@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+	<!-- Sales -->
+
+    <record id="sale_tax_dr_001" model="account.tax.template">
+        <field name="chart_template_id" ref="chart_dr"/>
+        <field name="name">ITBIS 18% Ventas</field>
+        <field name="description">V-ITBIS 18%</field>
+        <field name="amount">18</field>
+        <field name="type_tax_use">sale</field>
+        <field name="sequence" eval="9"/>
+    </record>
+
+	<!-- Purchases -->
+    <!-- ITBIS -->
+
+    <record id="purchase_tax_dr_001" model="account.tax.template">
+        <field name="chart_template_id" ref="chart_dr"/>
+        <field name="name">ITBIS Exento Compras</field>
+        <field name="description">C-ITBIS 0%</field>
+        <field name="amount">0</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="sequence" eval="10"/>
+    </record>
+
+    <record id="purchase_tax_dr_002" model="account.tax.template">
+        <field name="chart_template_id" ref="chart_dr"/>
+        <field name="name">ITBIS 18% Compras</field>
+        <field name="description">C-ITBIS 18%</field>
+        <field name="amount">18</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="sequence" eval="9"/>
+    </record>
+
+    <record id="purchase_tax_dr_003" model="account.tax.template">
+        <field name="chart_template_id" ref="chart_dr"/>
+        <field name="name">ITBIS 30% Retenido</field>
+        <field name="description">R-ITBIS 30%</field>
+        <field name="amount">-5.4</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="sequence" eval="10"/>
+    </record>
+
+    <record id="purchase_tax_dr_004" model="account.tax.template">
+        <field name="chart_template_id" ref="chart_dr"/>
+        <field name="name">ITBIS 75% Retenido</field>
+        <field name="description">R-ITBIS 75%</field>
+        <field name="amount">-13.5</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="sequence" eval="10"/>
+    </record>
+
+    <record id="purchase_tax_dr_005" model="account.tax.template">
+        <field name="chart_template_id" ref="chart_dr"/>
+        <field name="name">ITBIS 100% Retenido</field>
+        <field name="description">R-ITBIS 100%</field>
+        <field name="amount">-18</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="sequence" eval="10"/>
+    </record>
+
+    <!-- ISR -->
+
+    <record id="purchase_tax_dr_011" model="account.tax.template">
+        <field name="chart_template_id" ref="chart_dr"/>
+        <field name="name">2% Otras Retenciones (Norma 07-2007)</field>
+        <field name="description">R-ISR 2%</field>
+        <field name="amount">-2</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="sequence" eval="10"/>
+    </record>
+
+    <record id="purchase_tax_dr_012" model="account.tax.template">
+        <field name="chart_template_id" ref="chart_dr"/>
+        <field name="name">10% Honorarios por servicios pagados a Personas Físicas</field>
+        <field name="description">R-ISR 10%</field>
+        <field name="amount">-10</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="sequence" eval="10"/>
+    </record>
+
+</odoo>

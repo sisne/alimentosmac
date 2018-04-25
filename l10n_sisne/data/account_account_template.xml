@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data noupdate="1">
+
+        <!-- Activos 1 -->
+        <!-- Activos Corrientes 11 -->
+        <!-- Efectivo y equivalente de efectivo 111 -->
+
+        <!-- Efectivo en caja 1111 -->
+        <!-- Cuenta generada automatica por el sistema 11110001 -->
+
+        <!-- Efectivo en bancos 1112 -->
+        <!-- Cuenta generada automatica por el sistema 11120001 -->
+
+        <!-- Inversiones teporarias 112 -->
+        <!-- Inversiones en certificado de depositos 1121 -->   
+
+        <record id="chart_dr_11210001" model="account.account.template">
+            <field name="code">11210001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Certidicado de deposito BPD</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>        
+
+        <!-- Otras inversiones teporarias 1122 -->
+
+        <record id="chart_dr_11220001" model="account.account.template">
+            <field name="code">11220001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Inversiones en bonos</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>        
+
+        <!-- Cuentas por cobrar 113 -->
+        <!-- Cuentas por cobrar comerciales 1131 -->
+
+        <record id="chart_dr_11310001" model="account.account.template">
+            <field name="code">11310001</field>
+            <field name="reconcile" eval="True"/>
+            <field name="name">Cuentas por cobrar clientes locales</field>
+            <field name="user_type_id" ref="account.data_account_type_receivable"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Otras cuentas por cobrar 114 -->
+        <!-- Cuentas por cobrar accionistas 1141 -->   
+
+        <record id="chart_dr_11410001" model="account.account.template">
+            <field name="code">11410001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Cuentas por cobrar accionista</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Cuentas por cobrar empleados 1142 -->
+
+        <record id="chart_dr_11420001" model="account.account.template">
+            <field name="code">11420001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Cuentas por cobrar empleado</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Cuentas por cobrar relacionados 1143 -->
+
+        <record id="chart_dr_11430001" model="account.account.template">
+            <field name="code">11430001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Cuentas por cobrar relacionado</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Seguros anticipados 1144 -->
+
+        <record id="chart_dr_11440001" model="account.account.template">
+            <field name="code">11440001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Seguro de responsabilidad civil</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_11440002" model="account.account.template">
+            <field name="code">11440002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Seguro de transporte terrestre</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_11440003" model="account.account.template">
+            <field name="code">11440003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Seguro de incendio y lineas aliadas</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_11440004" model="account.account.template">
+            <field name="code">11440004</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Seguro de vehiculos</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_11440005" model="account.account.template">
+            <field name="code">11440005</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Seguro de fidelidad</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Impuestos anticipados 1145 -->
+
+        <record id="chart_dr_11450001" model="account.account.template">
+            <field name="code">11450001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Anticpos ISR</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_11450002" model="account.account.template">
+            <field name="code">11450002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Retenciones del Estado</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Depositos y fianzas 1146 -->
+
+        <record id="chart_dr_11460001" model="account.account.template">
+            <field name="code">11460001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Fianza energia electrica</field>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_11460002" model="account.account.template">
+            <field name="code">11460002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Fianza telefono</field>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_11460003" model="account.account.template">
+            <field name="code">11460003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Fianza agua</field>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Otros gastos anticipados 1147 -->
+
+        <record id="chart_dr_11470001" model="account.account.template">
+            <field name="code">114720001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Alquileres anticipados</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Permisos y licencias 1148 -->
+
+        <record id="chart_dr_11480001" model="account.account.template">
+            <field name="code">11480001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Permiso o licencia</field>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Inventarios 115 -->
+        <!-- Inventarios en almacén 1151 -->
+
+        <record id="chart_dr_11510001" model="account.account.template">
+            <field name="code">11510001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Mercancia</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_11510002" model="account.account.template">
+            <field name="code">11510002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Producto terminado</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_11510003" model="account.account.template">
+            <field name="code">11510003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Producto en proceso</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_11510004" model="account.account.template">
+            <field name="code">11510004</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Materia prima</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Inventario en tránsito 1152 -->
+
+        <record id="chart_dr_11520001" model="account.account.template">
+            <field name="code">11520001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Materiales en tránsito</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Inversiones permanentes 12 -->
+        <!-- Inversiones permanentes 121 -->
+        <!-- Depósito a largo plazo 1211 -->
+
+        <record id="chart_dr_12110001" model="account.account.template">
+            <field name="code">12110001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Certificado de depósito a largo plazo BPD</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Acciones 1212 -->
+
+        <record id="chart_dr_12120001" model="account.account.template">
+            <field name="code">12120001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Inversion en acciones BPD</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Otras inversiones 1213 -->
+
+        <record id="chart_dr_12130001" model="account.account.template">
+            <field name="code">12130001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Otra inversion permanente</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Activos fijos 13 -->
+        <!-- Activos fijos Categoría I 131 -->
+        <!-- Terrenos 1311 -->
+        
+        <record id="chart_dr_13110001" model="account.account.template">
+            <field name="code">13110001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Terrenos urbanos</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13110002" model="account.account.template">
+            <field name="code">13110002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Terrenos rurales</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Edificaciones y mejoras 1312 -->
+
+        <record id="chart_dr_13120001" model="account.account.template">
+            <field name="code">13120001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Edificiaciones</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13120002" model="account.account.template">
+            <field name="code">13120002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Mejoras e instalaciones</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Activos fijos Categoría II 132 -->
+        <!-- Activos fijos Categoría II 1321 -->
+
+        <record id="chart_dr_13210001" model="account.account.template">
+            <field name="code">13210001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Muebles y equipos de oficina</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13210002" model="account.account.template">
+            <field name="code">13210002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Equipos de transporte liviano</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13210003" model="account.account.template">
+            <field name="code">13210003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Equipos de computos y sistemas de informacion</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Activos fijos Categoría III 133 -->
+        <!-- Activos fijos Categoría III 1331 -->
+
+
+        <record id="chart_dr_13310001" model="account.account.template">
+            <field name="code">13310001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Vehículos pesados</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13310002" model="account.account.template">
+            <field name="code">13310002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Herramientos y utensilios</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13310003" model="account.account.template">
+            <field name="code">13310003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Tramerias</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13310004" model="account.account.template">
+            <field name="code">12310004</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Equipos de seguridad</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13310005" model="account.account.template">
+            <field name="code">12310005</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Planta eléctrica</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13310006" model="account.account.template">
+            <field name="code">13310006</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Maquinarias y equipos</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13310007" model="account.account.template">
+            <field name="code">13310007</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Central telefonica</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13310008" model="account.account.template">
+            <field name="code">13310008</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Otros activos categoria III</field>
+            <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Depreciación acumulada Categoría I 134 -->
+        <!-- Depreciación acumulada Categoría I 1341 -->
+
+
+        <record id="chart_dr_13410001" model="account.account.template">
+            <field name="code">13410001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Depreciacion acumulada edificaciones</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13410002" model="account.account.template">
+            <field name="code">13410002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Depreciacion acumulada mejoras e instalaciones</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Depreciación acumulada Categoría II 135 -->
+        <!-- Depreciación acumulada Categoría II 1351 -->
+
+        <record id="chart_dr_13510001" model="account.account.template">
+            <field name="code">13510001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Depreciacion acumulada muebles y equipos de oficina</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13510002" model="account.account.template">
+            <field name="code">13510002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Depreciacion acumulada equipos de transporte liviano</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13510003" model="account.account.template">
+            <field name="code">13510003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Depreciacion acumulada equipos de computos y sistemas de informacion</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Depreciación acumulada Categoría III 136 -->
+        <!-- Depreciación acumulada Categoría III 1361 -->        
+
+        <record id="chart_dr_13610001" model="account.account.template">
+            <field name="code">13610001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Depreciacion acumulada vehiculos pesados</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13610002" model="account.account.template">
+            <field name="code">13610002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Depreciacion acumulada herramientos y utensilios</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13610003" model="account.account.template">
+            <field name="code">13610003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Depreciacion acumulada tramerias</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13610004" model="account.account.template">
+            <field name="code">13610004</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Depreciacion acumulada equipos de seguridad</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13610005" model="account.account.template">
+            <field name="code">13610005</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Depreciacion acumulada planta electrica</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13610006" model="account.account.template">
+            <field name="code">13610006</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Depreciacion acumulada maquinarias y equipos</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13610007" model="account.account.template">
+            <field name="code">13610007</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Depreciacion acumulada central telefonica</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_13610008" model="account.account.template">
+            <field name="code">13610008</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Depreciacion acumulada otros activos categoria III</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Otros activos de inversión 14 -->
+        <!-- Otros activos de inversión 141 -->
+        <!-- Otros activos de inversión 1411 -->
+
+        <record id="chart_dr_14110001" model="account.account.template">
+            <field name="code">14110001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Local para alquilar</field>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+   
+        <!-- Pasivos 2 -->
+        <!-- Pasivos corrientes 21 -->
+        <!-- Documentos por pagar corto plazo 211 -->
+        <!-- Préstamos 2111 -->
+
+        <record id="chart_dr_21110001" model="account.account.template">
+            <field name="code">21110001</field>
+            <field name="reconcile" eval="True"/>
+            <field name="name">Sobregiro bancario</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_21110002" model="account.account.template">
+            <field name="code">21110002</field>
+            <field name="reconcile" eval="True"/>
+            <field name="name">Porción corriente de préstamo por pagar</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Cuentas por pagar 212 -->
+        <!-- Cuentas por pagar comerciales 2121 -->
+
+        <record id="chart_dr_21210001" model="account.account.template">
+            <field name="code">21210001</field>
+            <field name="reconcile" eval="True"/>
+            <field name="name">Cuentas por clientes locales</field>
+            <field name="user_type_id" ref="account.data_account_type_payable"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Otras cuentas por pagar 213 -->
+        <!-- Cuentas por pagar accionistas 2131 -->   
+
+        <record id="chart_dr_21310001" model="account.account.template">
+            <field name="code">21310001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Cuentas por pagar accionista</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Cuentas por cobrar relacionados 2132 -->
+
+        <record id="chart_dr_21320001" model="account.account.template">
+            <field name="code">21320001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Cuentas por pagar relacionado</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Impuesto por pagar 2133 -->
+
+        <record id="chart_dr_21330001" model="account.account.template">
+            <field name="code">21330001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">ITBIS</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_21330002" model="account.account.template">
+            <field name="code">21330002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">ITBIS retenido</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_21330003" model="account.account.template">
+            <field name="code">21330003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">ISR</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_21330004" model="account.account.template">
+            <field name="code">21330004</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">ISR retenido</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_21330005" model="account.account.template">
+            <field name="code">21330005</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">ISR retenido asalariado</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Retenciones y acumulaciones por pagar 2134 -->
+
+        <record id="chart_dr_21340001" model="account.account.template">
+            <field name="code">21340001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Salario de navidad por pagar</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_21340002" model="account.account.template">
+            <field name="code">21340002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">TSS por pagar (AFP, SFS y ARL)</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_21340003" model="account.account.template">
+            <field name="code">21340003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Infotep por pagar</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_21340004" model="account.account.template">
+            <field name="code">21340004</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Bonificación por pagar</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_21340005" model="account.account.template">
+            <field name="code">21340005</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Intereses por pagar</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_21340006" model="account.account.template">
+            <field name="code">21340006</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Cesantía</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_21340007" model="account.account.template">
+            <field name="code">21340007</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Vacaciones</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_21340008" model="account.account.template">
+            <field name="code">21340008</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Comisiones por pagar</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Cobros anticipados 2135 -->
+
+        <record id="chart_dr_21350001" model="account.account.template">
+            <field name="code">21350001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Anticipo recibido de clientes</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Pasivos a largo plazo 22 -->
+        <!-- Documentos por pagar largo plazo 221 -->
+        <!-- Préstamos comerciales 2211 -->
+
+        <record id="chart_dr_22110001" model="account.account.template">
+            <field name="code">22110001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Préstamo comercial BPD</field>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Préstamos hipotecarios 2212 -->
+
+        <record id="chart_dr_22120001" model="account.account.template">
+            <field name="code">22120001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Préstamo hipotecario BPD</field>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Capital 3 -->
+        <!-- Patrimonio 31 -->
+        <!-- Patrimonio de los asociados 311 -->
+        <!-- Patrimonio de los asociados 3111 -->
+
+        <record id="chart_dr_31110001" model="account.account.template">
+            <field name="code">31110001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Aporte de los socios</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_31110002" model="account.account.template">
+            <field name="code">31110002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Aumento de patrimonio</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_31110003" model="account.account.template">
+            <field name="code">31110003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Aumento de patrimonio del periodo</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Reservas 3112 -->
+
+        <record id="chart_dr_31120001" model="account.account.template">
+            <field name="code">31120001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Reserva legal</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Revaluación de activos 3113 -->
+
+        <record id="chart_dr_31130001" model="account.account.template">
+            <field name="code">31130001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Revaluación de edificios</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_31130002" model="account.account.template">
+            <field name="code">31130002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Revaluación de terrenos</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_31130003" model="account.account.template">
+            <field name="code">31130003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Revaluación de otros activos</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Resultados de años anteriores 3114 -->
+
+        <record id="chart_dr_31140001" model="account.account.template">
+            <field name="code">31140001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Resultados de años anteriores</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Resultados de años anteriores 3115 -->
+
+        <record id="chart_dr_31150001" model="account.account.template">
+            <field name="code">31150001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Resultados del ejercicio</field>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Ingresos 4 -->
+        <!-- Ingresos operacionales 41 -->
+        <!-- Ingresos operacionales 411 -->
+        <!-- Ventas 4111 -->
+
+        <record id="chart_dr_41110001" model="account.account.template">
+            <field name="code">41110001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Ventas</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Otro ingresos por ventas 4112 -->
+
+        <record id="chart_dr_41120001" model="account.account.template">
+            <field name="code">41120001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Ventas de desperdicios</field>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Ingresos operacionales 42 -->
+        <!-- Ingresos Financieros 421 -->
+        <!-- Ingresos por inversiones financieras 4211 -->
+
+        <record id="chart_dr_42110001" model="account.account.template">
+            <field name="code">42110001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Ingresos por inversiones en CD BPD</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Ingresos por dividendos 4212 -->
+
+        <record id="chart_dr_42120001" model="account.account.template">
+            <field name="code">42120001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Ingresos por dividendos- acciones en CIA</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Otros ingresos financiertos 4213 -->
+
+        <record id="chart_dr_42130001" model="account.account.template">
+            <field name="code">42130001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Ingresos por intereses</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Ingresos extraordinarios 43 -->
+        <!-- Ingresos extraordinarios 431 -->
+        <!-- Ventas de activos depreciables 4311 -->
+
+        <record id="chart_dr_43110001" model="account.account.template">
+            <field name="code">43110001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Ventas de activos Categoria I</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_43110002" model="account.account.template">
+            <field name="code">43110002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Ventas de activos Categoria II</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_43110003" model="account.account.template">
+            <field name="code">43110003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Ventas de activos Categoria III</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Ventas de bienes de capital 4312 -->
+
+        <record id="chart_dr_43120001" model="account.account.template">
+            <field name="code">43120001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Ingresos por ventas de acciones</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Ingresos por diferencias cambiarias 4313 -->
+
+        <record id="chart_dr_43130001" model="account.account.template">
+            <field name="code">43130001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Ingresos por diferencias cambiarias</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Ingresos correspondientes a otros ejercicios 4314 -->
+
+        <record id="chart_dr_43140001" model="account.account.template">
+            <field name="code">43140001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Rectificaciones de años anteriores</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Otros ingresos extraordinarios 4315 -->
+
+        <record id="chart_dr_43150001" model="account.account.template">
+            <field name="code">43150001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Otros ingresos</field>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Costos 5 -->
+        <!-- Costos de producción 51 -->
+        <!-- Costos de materiales usados 511 -->
+        <!-- Mercancías - compras locales 5111 -->
+
+        <record id="chart_dr_51110001" model="account.account.template">
+            <field name="code">51110001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Mercancías - compras locales</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Mercancías - compras en el exterior 5112 -->
+
+        <record id="chart_dr_51120001" model="account.account.template">
+            <field name="code">51120001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Mercancías - compras en el exterior</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Mano de obra 512 -->
+        <!-- Mano de obra 5121 -->
+
+        <record id="chart_dr_51210001" model="account.account.template">
+            <field name="code">51210001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Sueldos y salarios directos</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_51210002" model="account.account.template">
+            <field name="code">51210002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Sueldos y salarios indirectos</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Costos indirectos de fabricación 513 -->
+        <!-- Costos indirectos de fabricación 5131 -->
+
+        <record id="chart_dr_51310001" model="account.account.template">
+            <field name="code">51310001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Costos indirectos de fabricación</field>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Gastos generales de administración, ventas y financieros 6 -->
+        <!-- Gastos de personal 61 -->
+        <!-- Gastos de personal 611 -->
+        <!-- Sueldos y salarios 6111 -->
+
+        <record id="chart_dr_61110001" model="account.account.template">
+            <field name="code">61110001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Sueldos</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_61110002" model="account.account.template">
+            <field name="code">61110002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Comisiones</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_61110003" model="account.account.template">
+            <field name="code">61110003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Inentivos</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_61110004" model="account.account.template">
+            <field name="code">61110004</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Horas extras</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Sueldos y salarios 6112 -->
+
+        <record id="chart_dr_61120001" model="account.account.template">
+            <field name="code">61120001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Alquiler de viviendas</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_61120002" model="account.account.template">
+            <field name="code">61120002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Gastos de vehículo</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_61120003" model="account.account.template">
+            <field name="code">61120003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Colegio y otros estudios</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_61120004" model="account.account.template">
+            <field name="code">61120004</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Alimentación y otros</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Seguros 6113 -->
+
+        <record id="chart_dr_61130001" model="account.account.template">
+            <field name="code">61130001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Seguros complementarios</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <record id="chart_dr_61130002" model="account.account.template">
+            <field name="code">61130002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Seguros de vida</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Aportación seguridad social 6114 -->
+
+       <record id="chart_dr_61140001" model="account.account.template">
+            <field name="code">61140001</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Seguro familiar de salud (SFS)</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+       <record id="chart_dr_61140002" model="account.account.template">
+            <field name="code">61140002</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Contribución pensión (SVDS)</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+       <record id="chart_dr_61140003" model="account.account.template">
+            <field name="code">61140003</field>
+            <field name="reconcile" eval="False"/>
+            <field name="name">Seguro de riesgos laborales (SRL)</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="chart_dr"/>
+        </record>
+
+        <!-- Aportación seguridad social 6115 -->
+
+
+
+
+
+
+
+
+
+        <!-- Default accounts -->
+
+        <record id="chart_dr" model="account.chart.template">
+            <field name="property_account_receivable_id" ref="chart_dr_11310001"/>
+            <field name="property_account_payable_id" ref="chart_dr_21210001"/>
+        </record>
+
+
+
+
+
+    </data>
+</odoo>
