@@ -104,9 +104,8 @@ class AccountTaxCategory(models.Model):
 	name = fields.Char(string='Name')
 
 
-"""
 class AccountInvoiceRefund(models.TransientModel):
-    Refunds invoice
+    # Refunds invoice
 
     _inherit = "account.invoice.refund"
     _description = "Invoice Refund"
@@ -125,5 +124,3 @@ class AccountInvoiceRefund(models.TransientModel):
 			    	invoice_id = inv_obj.browse(self._context.get('active_ids'))
 			    	next_inv_id.ncf_doc_modification = invoice_id.ncf_no
     	return res
-
- """
