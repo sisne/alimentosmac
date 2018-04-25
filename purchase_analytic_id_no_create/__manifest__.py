@@ -8,7 +8,7 @@ Do not allow creating analytic accounts on the go.
     'author': 'SisNe, SRL',
     'website': 'https://sisne.do/',
     'version': '1.0.1',
-    'depends': ['account'],
+    'depends': ['account','purchase'],
     'data' : [
         'views/purchase_views.xml',
     ],
