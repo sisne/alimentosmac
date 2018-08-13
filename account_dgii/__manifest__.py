@@ -18,6 +18,7 @@
         'views/account_invoice_view.xml',
         'views/partner_view.xml',
         'views/service_tax_view.xml',
+        'views/account_tax.xml',
         'wizard/report_wizard.xml',
         'demo/purchase_good_category.xml',
         'views/account_dgii_menuitem.xml',

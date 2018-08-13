@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import account_invoice
-import partner
+from . import account_invoice
+from . import partner
+from . import account_tax

@@ -8,7 +8,8 @@
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='date_due']" position="after">
                     <field name="ncf_no" required="1"/>
-                    <field name="type_good_services_id" required="1" widget="selection" />
+                    <field name="tipo"/>
+                    <!-- <field name="type_good_services_id" required="1" widget="selection" /> -->
                     <field name="ncf_doc_modification" invisible="1" />
                     <field name="tipo_id" invisible="1"/>
                     <field name="receipt_year" invisible="1"/>
@@ -41,7 +42,8 @@
                 <tree string="Invoice Line">
                     <field name="supplier_tax_no" style="width:10px"/>
                     <field name="tipo_id"/>
-                    <field name="type_good_services_id"/>
+                    <!-- <field name="type_good_services_id"/> -->
+                    <field name="tipo"/>
                     <field name="ncf_no"/>
                     <field name="ncf_doc_modification"/>
                     <field name="receipt_year"/>
