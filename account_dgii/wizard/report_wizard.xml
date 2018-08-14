@@ -6,15 +6,17 @@
         <field name="arch" type="xml">
             <form string="Credit Note">
                 <group>
-
-                     <group>
+                     <group attrs="{'invisible': [('invoice_data', '!=', False)]}">
                         <label for="month" string="Period"/>
                         <div>
-
                             <field name="month" class="oe_inline" nolabel="1"/>
                             <field name="year" class="oe_inline" nolabel="1"/>
                             <field name="from_date" invisible="1"/>
                         </div>
+                     </group>
+                     <group attrs="{'invisible': [('invoice_data', '=', False)]}">
+                        <field name="file_name" filename="invoice_data" attrs="{'invisible': [('file_name', '=', False)]}"/>
+                        <field name="invoice_data" invisible="1"/>
                      </group>
                      <!-- <group>
                         <label for="month" string="TO"/>
