@@ -110,8 +110,8 @@ class AccountInvoice(models.Model):
         #check length
         for invoice in self:
             if invoice.ncf_no and invoice.type in ('in_invoice','in_refund'):
-                if len(invoice.ncf_no) != 11 or invoice.ncf_no[0].isdigit() or invoice.ncf_no[0] != 'A' or (not invoice.ncf_no[1:].isdigit()):
-                    raise ValidationError(_('The NCF number [%s] does not seem to be valid. \nNote: the expected format is A0123456789'))
+                if len(invoice.ncf_no) != 11 or invoice.ncf_no[0].isdigit() or invoice.ncf_no[0] != 'B' or (not invoice.ncf_no[1:].isdigit()):
+                    raise ValidationError(_('The NCF number [%s] does not seem to be valid. \nNote: the expected format is B0123456789'))
 
 class AccountTax(models.Model):
     _inherit = 'account.tax'
